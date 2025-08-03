@@ -29,12 +29,42 @@
 		A61D3CE52E32B5F6007A89E4 /* Apple-frameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple-frameworkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A61D3CD02E32B5F4007A89E4 /* Apple-framework */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Apple-framework";
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A645D2192E3FC32C00E88D4C /* Exceptions for "Apple-framework" folder in "Apple-framework" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Apple_frameworkApp.swift,
+				Assets.xcassets,
+				Model/Framework.swift,
+				Screens/FrameworkDetailView/FrameworkDetailView.swift,
+				Screens/FrameworkGridView/FrameworkGridView.swift,
+				Screens/FrameworkGridView/FrameworkGridViewModel.swift,
+				"UIKit Components/SafariView.swift",
+				Views/Buttons/AFButton.swift,
+				Views/Buttons/XDismissButton.swift,
+				Views/OtherViews/FrameworkTitleView.swift,
+			);
+			target = A61D3CCD2E32B5F4007A89E4 /* Apple-framework */;
 		};
+		A645D21A2E3FC32C00E88D4C /* Exceptions for "Apple-framework" folder in "Apple-frameworkTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Apple_frameworkApp.swift,
+				Assets.xcassets,
+				Model/Framework.swift,
+				Screens/FrameworkDetailView/FrameworkDetailView.swift,
+				Screens/FrameworkGridView/FrameworkGridView.swift,
+				Screens/FrameworkGridView/FrameworkGridViewModel.swift,
+				"UIKit Components/SafariView.swift",
+				Views/Buttons/AFButton.swift,
+				Views/Buttons/XDismissButton.swift,
+				Views/OtherViews/FrameworkTitleView.swift,
+			);
+			target = A61D3CDA2E32B5F5007A89E4 /* Apple-frameworkTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		A61D3CDE2E32B5F5007A89E4 /* Apple-frameworkTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Apple-frameworkTests";
@@ -43,6 +73,15 @@
 		A61D3CE82E32B5F6007A89E4 /* Apple-frameworkUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Apple-frameworkUITests";
+			sourceTree = "<group>";
+		};
+		A645D20E2E3FC32C00E88D4C /* Apple-framework */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A645D2192E3FC32C00E88D4C /* Exceptions for "Apple-framework" folder in "Apple-framework" target */,
+				A645D21A2E3FC32C00E88D4C /* Exceptions for "Apple-framework" folder in "Apple-frameworkTests" target */,
+			);
+			path = "Apple-framework";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +114,10 @@
 		A61D3CC52E32B5F4007A89E4 = {
 			isa = PBXGroup;
 			children = (
-				A61D3CD02E32B5F4007A89E4 /* Apple-framework */,
 				A61D3CDE2E32B5F5007A89E4 /* Apple-frameworkTests */,
 				A61D3CE82E32B5F6007A89E4 /* Apple-frameworkUITests */,
 				A61D3CCF2E32B5F4007A89E4 /* Products */,
+				A645D20E2E3FC32C00E88D4C /* Apple-framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +146,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				A61D3CD02E32B5F4007A89E4 /* Apple-framework */,
-			);
 			name = "Apple-framework";
 			packageProductDependencies = (
 			);
@@ -132,6 +168,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				A61D3CDE2E32B5F5007A89E4 /* Apple-frameworkTests */,
+				A645D20E2E3FC32C00E88D4C /* Apple-framework */,
 			);
 			name = "Apple-frameworkTests";
 			packageProductDependencies = (
